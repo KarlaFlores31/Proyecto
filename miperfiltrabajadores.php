@@ -1,5 +1,4 @@
 <?php
-session_start();
 if(!isset($_SESSION['IDIEST'])){
 
 }else{
@@ -51,20 +50,17 @@ if(!isset($_SESSION['IDIEST'])){
 				<div class="cajaperfil">
 		<table style="padding-top: 35px;"> 
 					<?php
+		include 'connect.php';
         $idUsuario = $_SESSION['IDIEST'];
-        include 'connect.php';
-        $sql = "SELECT * FROM users WHERE IDIEST=$idUsuario";
-        $result_usuario = mysqli_query($db, $sql);
+        $sql = "SELECT * FROM trabajadores WHERE IDIEST=$idUsuario";
+        $result_usuario = mysqli_query($conn, $sql);
         while($row = mysqli_fetch_assoc($result_usuario)){ ?>
         <tr>
         
         <td class="NU"><?php echo $row['NOMBRE']; ?> </td>
         </tr>
         <tr>
-        <td class="info"> <?php echo $row['CARRERA']; ?> </td>
-        </tr>
-        <tr>
-        <td class="info"> <?php echo $row['SEMESTRE']; ?> </td>
+        <td class="info"> <?php echo $row['DIVISION']; ?> </td>
         </tr>
 		<tr> 
 		<td class="info"> <?php echo $row['IDIEST']; ?> </td>

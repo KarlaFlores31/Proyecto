@@ -1,14 +1,12 @@
 <?php include('connect.php');
     
-if(isset($_POST['registrarse'])) {
+if(isset($_POST['registrarsetrabajadores'])) {
     $PASSWORD = $_POST['CONTRASEÑA'];
-    $CUENTASIE = $_POST['SIE'];
     $IDIEST = $_POST['ID'];
-    $SEMESTRE = $_POST['SEMESTRE'];
-    $CARRERA = $_POST['CARRERA'];
+    $DIVISION = $_POST['DIVISION'];
     $NOMBRE = $_POST['NOMBRE'];
 
-    $query="INSERT INTO users(CUENTASIE, PASSWORD, NOMBRE, IDIEST, CARRERA, SEMESTRE) VALUES('$CUENTASIE','$PASSWORD','$NOMBRE','$IDIEST','$CARRERA','$SEMESTRE')";
+    $query="INSERT INTO trabajadores(PASSWORD, NOMBRE, IDIEST, DIVISION) VALUES('$PASSWORD','$NOMBRE','$IDIEST','$DIVISION')";
     $result=mysqli_query($conn, $query); 
 
     if (!$result) { //si result no es cierto dar un mensaje de fail

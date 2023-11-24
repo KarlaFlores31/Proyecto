@@ -27,7 +27,7 @@
 					<a class="nav-link-item" href="index.html">INICIO</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link-item" href="iniciarsesion.php">INICIAR SESIÓN</a>
+					<a class="nav-link-item" href="iniciarsesionformulario.php">INICIAR SESIÓN</a>
 				</li>
 			</ul>
 		</nav>
@@ -117,7 +117,7 @@
 										<input type="text" id="Nombre" name="NOMBRE" placeholder=" Nombre Completo">
 										<p></p>
 										<input list="division" type="text" id="Carrera" name='DIVISION' placeholder=" Division">
-										<datalist id="carrera">
+										<datalist id="division">
 											<option >Ciencias De La Salud</option>
 											<option >Ciencias Económico Administrativas</option>
 											<option >Ciencias Exactas</option>
@@ -126,7 +126,7 @@
 										</datalist>
 										</div>
 									</div>
-								<div class="btn"><input type="submit" id="registarse" name="registrarse" value=" Registrarse"></div>
+								<div class="btn"><input type="submit" id="registarse" name="registrarsetrabajadores" value=" Registrarse"></div>
 								</form>
 							</div>
 						</div>

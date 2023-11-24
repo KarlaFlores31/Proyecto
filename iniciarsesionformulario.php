@@ -1,58 +1,4 @@
-<?php
-
-$db = include('connect.php');
-
-// Si el usuario ya ha iniciado sesión, lo redirigimos a su perfil
-if(isset($_SESSION['IDIEST'])) {
-    header("location:miperfil.php");
-    exit();
-}
-// Si hay un error en la conexión, lo mostramos y terminamos el script
-if($db->connect_error) {
-    die("La conexión falló: " . $db->connect_error);
-}
-
-
-if(isset($_POST['iniciarsesion'])) {
-    // Escapamos los valores de entrada para prevenir inyecciones SQL
-    $IDIEST = $db->real_escape_string($_POST['IDIEST']);
-    $PASSWORD = $db->real_escape_string($_POST['PASSWORD']);
-    
-    // Preparamos la consulta SQL para buscar al usuario en la base de datos
-    $sql = "SELECT * FROM users WHERE IDIEST='$IDIEST' AND PASSWORD='$PASSWORD'";
-    $stmt = $db->prepare($sql);
-    
-
-    if($stmt) {
-        // Vinculamos los parámetros a la consulta y la ejecutamos
-        $stmt->bind_param("ss", $IDIEST, $PASSWORD);
-        $stmt->execute();
-        
-        // Obtenemos el resultado de la consulta
-        $result = $stmt->get_result();
-        
-        // Si encontramos al menos un usuario que coincida con el IDIEST y la contraseña proporcionados
-        if($result->num_rows >= 1) {
-
-            $_SESSION['IDIEST'] = $IDIEST;
-            header("location:miperfil.php");
-            exit();
-        } else {
-            // Si no encontramos ningún usuario que coincida, mostramos un mensaje de error
-            echo "Tu idiest o contraseña están incorrectos.";
-        }
-        
-        // Cerramos la declaración preparada
-        $stmt->close();
-    } else {
-        // Si hubo un error al preparar la consulta, lo mostramos
-        echo "Error al preparar la consulta SQL: " . $db->error;
-    }
-}
-
-
-$db->close();
-?>
+<?php include('connect.php'); ?>
 
 <!DOCTYPE html> 
 <html lang="en"> 
@@ -100,7 +46,7 @@ $db->close();
 					<div class="center-wrap">
 							<h4>Estudiante</h4>
 							<div class="form-group">
-								<form action="iniciarsesion.php" method="post"> <!-- Formulario de inicio de sesión que envía los datos mediante un POST -->
+								<form action="iniciarsesionusuarios.php" method="post"> <!-- Formulario de inicio de sesión que envía los datos mediante un POST -->
 									<div class="box-container">
 										<div class="box">
 											<p></p>
@@ -112,7 +58,7 @@ $db->close();
 										</div>
 									</div>
 									<br>
-									<div class="btn"><input type="submit" id="iniciarsesion" name="iniciarsesion" value="Iniciar Sesión"></div> <!-- Botón para enviar el formulario -->
+									<div class="btn"><input type="submit" id="iniciarsesion" name="iniciarsesionusuarios" value="Iniciar Sesión"></div> <!-- Botón para enviar el formulario -->
 								</form>
 							</div>
 					</div>
@@ -132,7 +78,7 @@ $db->close();
 									</div>
 								</div>
 								<br>
-								<div class="btn"><input type="submit" id="iniciarsesion" name="iniciarsesion" value="Iniciar Sesión"></div> <!-- Botón para enviar el formulario -->
+								<div class="btn"><input type="submit" id="iniciarsesion" name="iniciarsesiontrabajadores" value="Iniciar Sesión"></div> <!-- Botón para enviar el formulario -->
 							</form>
 					</div>
 				</div>
@@ -144,5 +90,3 @@ $db->close();
 </body>
 
 </html>  <!-- Fin del documento HTML -->
-
-
