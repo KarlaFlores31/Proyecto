@@ -104,7 +104,7 @@
 					<div class="center-wrap">
 						<h4 >Trabajador</h4>
 							<div class="box-container">
-								<form action="registrarseguardias.php" method="post" class="box-container"> 
+								<form action="registrarsetrabajadores.php" method="post" class="box-container"> 
 									<div class="box">
 										<p></p>
 										<input type="text" id="ID" name="ID" placeholder=" ID">

@@ -23,7 +23,7 @@ if(isset($_POST['iniciarsesion'])) {
     $PASSWORD = $db->real_escape_string($_POST['PASSWORD']);
     
     // Preparamos la consulta SQL para buscar al usuario en la base de datos
-    $sql = "SELECT * FROM users WHERE IDIEST=$IDIEST AND PASSWORD=$PASSWORD";
+    $sql = "SELECT * FROM users WHERE IDIEST='$IDIEST' AND PASSWORD='$PASSWORD'";
     $stmt = $db->prepare($sql);
     
     // Si la consulta se preparó correctamente
@@ -124,7 +124,7 @@ $db->close();
 				<div class="card-back">
 					<div class="center-wrap">
 							<h4 >Trabajador</h4>
-							<form action="iniciarsesionguardias.php" method="post"> <!-- Formulario de inicio de sesión que envía los datos mediante un POST -->
+							<form action="iniciarsesiontrabajadores.php" method="post"> <!-- Formulario de inicio de sesión que envía los datos mediante un POST -->
 								<div class="box-container">
 									<div class="box">
 										<p></p>
