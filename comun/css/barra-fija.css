@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* General */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Barra de navegación */
+.baja{
+    background-color: #ffffff ;
+}
+
+.barra{
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+
+.imglogo{
+	float: left;
+	padding: 10px;
+	height: 80px;
+}
+
+.container{
+    background: #ffffff;
+    height: 80px;
+    width: 100%;
+}
+
+.logo{
+    float: left;
+    padding: 10px;
+    height: 80px;
+}
+
+.menu{
+    float: right;
+    height: 40px;
+}
+
+.nav p{
+    height: 40px;
+}
+
+.nav-item{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.nav-link-item{
+    color: #000000;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.nav-link-item:hover{
+    color: #ffffff;
+    background: #FF5900;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* General */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Barra de navegación */
+.container{
+    background:#FFFFFF;
+    height: 80px;
+    width: 100%;
+	float: left;
+}
+/* Barra final*/
+body{
+    position: relative;
+    min-height: 100vh;
+}
+.container3{
+    background:#FF5900;
+    height: 80px;
+    width: 100%;
+	position: absolute;
+    bottom: 0;
+}
+
+/*Titulio de pagina */
+.container-titulo{
+    padding-top: 5%;
+    padding-left: 3%;
+}
+.sanciones{
+    display: flex;
+    justify-content: left;
+}
+
+.titulo{
+    padding-top: 5%;
+	font-weight: bold;
+	font-size: 70px;
+	float: center;
+}
+
+.imgalerta{
+    margin-left: 60%;
+    margin-top: 40%;
+	height: 150px;
+}
+
+/*cajas de sanciones*/
+
+.box-container{
+    display: flex;
+    justify-content: left;
+    padding-left: 5%;
+    flex-wrap: wrap;
+}
+
+.box-container p{
+    padding: 10px;
+}
+
+.box{
+    padding: 20px;
+    border-radius: 9px;
+    height: 16rem;
+    width: 18rem;
+    box-shadow: 0 .3rem 1rem rgb(200, 200, 200);
+    margin: 2rem;
+}
+
+.box h5{
+    color: rgb(131, 131, 131)
+}
+

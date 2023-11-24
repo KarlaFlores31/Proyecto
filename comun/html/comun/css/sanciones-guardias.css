@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* General */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Barra de navegación */
+.container{
+    background:#FFFFFF;
+    height: 80px;
+    width: 100%;
+	float: left;
+}
+
+/* Barra final*/
+body{
+    position: relative;
+    min-height: 100vh;
+}
+.container3{
+    background:#FF5900;
+    height: 80px;
+    width: 100%;
+	position: absolute;
+    bottom: 0;
+}
+
+/*Titulio de pagina */
+.container-titulo{
+    padding-top: 5%;
+    padding-left: 28%;
+}
+
+.titulo{
+	font-weight: bold;
+	font-size: 70px;
+	float: center;
+}
+
+.imgalerta{
+    margin-left: 20%;
+	height: 150px;
+}
+
+/*cajas*/
+.container-solicitud{
+    padding-top: .5%;
+    height: 55vh;
+    width: 85%;
+    text-align: center;
+    justify-content: center;
+}
+
+.box-container{
+    justify-content: center;
+    padding-left: 14%;
+    flex-wrap: wrap;
+}
+
+.date input{
+    font-size: 25px;
+    background: rgb(228, 228, 228);
+    border: rgb(228, 228, 228);
+    color: #989898;
+    border-radius: 6px;
+    margin-top: 10px;
+    height: 45px;
+    width: 563px;
+}
+
+.description input{
+    text-align: start;
+    font-size: 25px;
+    background: rgb(228, 228, 228);
+    color: #989898;
+    border: rgb(228, 228, 228);
+    border-radius: 6px;
+    margin-top: 8px;
+    height: 90px;
+    width: 563px;
+}
+
+.button input{
+    margin-top: 1rem;
+    border-radius: 9px;
+    width: 563px;
+    height: 57px;
+    font-size: 30px;
+    color: #ffffff;
+    background: #000000;
+    font-size: 20px;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    align-items: center;
+}

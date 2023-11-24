@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* General */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Barra de navegaciÃ³n */
+.container{
+    background:#FFFFFF;
+    height: 80px;
+    width: 100%;
+	float: left;
+}
+/* Barra final*/
+body{
+    position: relative;
+    min-height: 100vh;
+}
+.container3{
+    float: left;
+    background:#FF5900;
+    height: 80px;
+    width: 100%;
+	position: absolute;
+    bottom: 0;
+}
+
+/*Titulio de pagina */
+.container-titulo{
+    padding-top: 5%;
+    padding-left: 3%;
+}
+.miperfil{
+    display: flex;
+    justify-content: left;
+}
+
+.img{
+    margin-left: 60%;
+    margin-top: 15%;
+	height: 200px;
+}
+
+/*cajas de sanciones*/
+
+.box-container{
+    display: flex;
+    justify-content: left;
+    padding-left: 5%;
+    flex-wrap: wrap;
+}
+
+.box-container p{
+    padding: 10px;
+}
+
+.box{
+    padding: 20px;
+    border-radius: 9px;
+    height: 16rem;
+    width: 18rem;
+    margin: 2rem;
+}
+
+.box h5{
+    color: rgb(131, 131, 131)
+}
+
+.cajaperfil{
+    padding: 20px;
+    border-radius: 9px;
+    height: 12rem;
+    width: 80rem;
+    margin: 2rem;
+}
+
+.NU td{
+    font-size: 35px;
+}
+
+.caja{
+    padding: 20px;
+    border-radius: 9px;
+    height: 16rem;
+    width: 40rem;
+    margin: 2rem;
+    display:flex;
+}
+
+.img2{
+    margin-left: 0%;
+    margin-top: 0%;
+	height: 150px;
+}
+
+.container-link{
+    display: inline;
+    margin-left: 20px;
+}
+
+.container-link h4{
+    font-size: 30px;
+}
+
+.button input{
+    font-size: 20px;
+    background: rgb(0,0,0);
+    color:#FFFFFF;
+    height: 35px;
+    width: 43px;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+}
+.box-containerfondo{
+    display: flex;
+    justify-content: left;
+    padding-left: 5%;
+    flex-wrap: wrap;
+    background-image: "comun/imagenes/fondo.png";
+    background-color: transparent;
+}
