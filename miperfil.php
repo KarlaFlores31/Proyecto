@@ -52,7 +52,7 @@ if(!isset($_SESSION['IDIEST'])){
 		<table style="padding-top: 35px;"> 
 					<?php
         $idUsuario = $_SESSION['IDIEST'];
-        include 'conexionbd.php';
+        include 'connect.php';
         $sql = "SELECT * FROM users WHERE IDIEST=$idUsuario";
         $result_usuario = mysqli_query($db, $sql);
         while($row = mysqli_fetch_assoc($result_usuario)){ ?>
