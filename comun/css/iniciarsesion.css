@@ -20,6 +20,23 @@
 	right: 0px; 
 }
 
+.boton input{
+    border-radius: 9px;
+    width: 100px;
+    height: 40px;
+    color: #ffffff;
+    background: #000000;
+    font-size: 15px;
+    text-decoration: none;
+    align-items: center;
+  }
+  
+  .boton input:hover{
+    color: #ffffff;
+    background: #313131;
+    border: #313131;
+  }
+
 .A{
     padding-top: 50%;
     height: 90%;

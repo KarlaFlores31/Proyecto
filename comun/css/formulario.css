@@ -1,20 +1,3 @@
-.btn input{
-  border-radius: 9px;
-  width: 100px;
-  height: 40px;
-  color: #ffffff;
-  background: #000000;
-  font-size: 15px;
-  text-decoration: none;
-  align-items: center;
-}
-
-.btn input:hover{
-  color: #ffffff;
-  background: #313131;
-  border: #313131;
-}
-
 .cajas{
   text-align: center;
   padding-top: 10%;

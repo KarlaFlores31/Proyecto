@@ -47,7 +47,7 @@
     text-align: center;
 }
 
-.button input{
+.botton input{
     margin-top: 1rem;
     border-radius: 9px;
     width: 563px;
@@ -61,11 +61,11 @@
     align-items: center;
 }
 
-.button input:hover{
+.botton input:hover{
     background: #313131;
     border: #313131;
 }
-.button{
+.botton{
 	padding-top: 25px;
 }
 

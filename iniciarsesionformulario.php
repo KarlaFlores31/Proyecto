@@ -58,7 +58,7 @@
 										</div>
 									</div>
 									<br>
-									<div class="btn"><input type="submit" id="iniciarsesion" name="iniciarsesionusuarios" value="Iniciar Sesión"></div> <!-- Botón para enviar el formulario -->
+									<div class="boton"><input type="submit" id="iniciarsesion" name="iniciarsesionusuarios" value="Iniciar Sesión"></div> <!-- Botón para enviar el formulario -->
 								</form>
 							</div>
 					</div>
@@ -78,7 +78,7 @@
 									</div>
 								</div>
 								<br>
-								<div class="btn"><input type="submit" id="iniciarsesion" name="iniciarsesiontrabajadores" value="Iniciar Sesión"></div> <!-- Botón para enviar el formulario -->
+								<div class="boton"><input type="submit" id="iniciarsesion" name="iniciarsesiontrabajadores" value="Iniciar Sesión"></div> <!-- Botón para enviar el formulario -->
 							</form>
 					</div>
 				</div>
